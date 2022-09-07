@@ -23,29 +23,37 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/scoreTeamOne"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="20sp"
                 android:text="TextView"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:textSize="34sp" />
 
             <Button
-                android:id="@+id/button"
-                android:layout_width="wrap_content"
+                android:id="@+id/addThreePointsTeamOne"
+                android:layout_width="112dp"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:text="+3 Points" />
 
             <Button
-                android:id="@+id/button3"
-                android:layout_width="wrap_content"
+                android:id="@+id/addTwoPointsTeamOne"
+                android:layout_width="112dp"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:text="+2 Points" />
 
             <Button
-                android:id="@+id/button4"
-                android:layout_width="wrap_content"
+                android:id="@+id/addOnePointTeamOne"
+                android:layout_width="112dp"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:text="Free Throw" />
+
+            <Button
+                android:id="@+id/removeOnePointTeamOne"
+                android:layout_width="112dp"
+                android:layout_height="wrap_content"
+                android:text="-1 Point" />
         </LinearLayout>
 
         <LinearLayout
@@ -56,39 +64,48 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/scoreTeamTwo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="20sp"
                 android:text="TextView"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:textSize="34sp" />
 
             <Button
-                android:id="@+id/button2"
-                android:layout_width="wrap_content"
+                android:id="@+id/addThreePointsTeamTwo"
+                android:layout_width="112dp"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:text="+3 Points" />
 
             <Button
-                android:id="@+id/button5"
-                android:layout_width="wrap_content"
+                android:id="@+id/addTwoPointsTeamTwo"
+                android:layout_width="112dp"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:text="+2 Points" />
 
             <Button
-                android:id="@+id/button6"
-                android:layout_width="wrap_content"
+                android:id="@+id/addOnePointTeamTwo"
+                android:layout_width="112dp"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:text="Free Throw" />
+
+            <Button
+                android:id="@+id/removeOnePointTeamTwo"
+                android:layout_width="112dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.45"
+                android:text="-1 Point" />
         </LinearLayout>
 
     </LinearLayout>
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/resetBoth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="0.45"
-        android:text="Button"
+        android:text="reset"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
