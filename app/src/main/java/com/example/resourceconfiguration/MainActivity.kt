@@ -124,8 +124,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun addPointsToTeam(textView: TextView, pointsToAdd: Int){
-        var newScore: Int
-        var currentScore: Int = textView.text.toString().toInt()
+        val newScore: Int
+        val currentScore: Int = textView.text.toString().toInt()
         newScore = currentScore + pointsToAdd
         textView.text = newScore.toString()
     }
