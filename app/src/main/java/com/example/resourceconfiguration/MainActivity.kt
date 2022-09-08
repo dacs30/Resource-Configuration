@@ -1,9 +1,9 @@
 package com.example.resourceconfiguration
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -94,5 +94,11 @@ class MainActivity : AppCompatActivity() {
         textView.text = "0"
         textView2.text = "0"
     }
+
+//    override fun onSaveInstanceState(outState: Bundle) {
+//        super.onSaveInstanceState(outState)
+//        outState.putCharSequence(KEY_TEXT_VALUE, mTextView.getText())
+//    }
+
 
 }
