@@ -83,6 +83,18 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    override fun onSaveInstanceState(outState: Bundle) {
+        outState.putString("scoreTeamOne", scoreTeamOne.text.toString())
+        outState.putString("scoreTeamTwo", scoreTeamTwo.text.toString())
+        super.onSaveInstanceState(outState)
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
+        super.onRestoreInstanceState(savedInstanceState)
+        scoreTeamOne.setText(savedInstanceState.getString("scoreTeamOne"))
+        scoreTeamTwo.setText(savedInstanceState.getString("scoreTeamTwo"))
+    }
+
     private fun addPointsToTeam(textView: TextView, pointsToAdd: Int){
         var newScore: Int
         var currentScore: Int = textView.text.toString().toInt()
