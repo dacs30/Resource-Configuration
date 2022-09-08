@@ -7,6 +7,7 @@ import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
 
+    // locale assignment
     private lateinit var scoreTeamOne: TextView
     private lateinit var scoreTeamTwo: TextView
 
